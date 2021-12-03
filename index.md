@@ -1,37 +1,28 @@
-## Welcome to GitHub Pages
+# The Levenshtein Distance
 
-You can use the [editor on GitHub](https://github.com/denizumutdereli/python-levenshtein-distance/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+The Levenshtein distance is a metric to measure how apart are two sequences of words. In other words, it measures the minimum number of edits that you need to do to change a one-word sequence into the other. These edits can be insertions, deletions or substitutions. This metric was named after Vladimir Levenshtein, who originally considered it in 1965.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Ref: <a href="https://en.wikipedia.org/wiki/Levenshtein_distance" target="_blank">Wiki</a>
 
-### Markdown
+Saying that; The more similar the two words are the less distance between them, and vice versa. One common use for this distance is in the autocompletion or autocorrection features of text processors or chat applications.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Hello vs Helo is 1 char distance
+Hello vs Kelo is 2 chars distance
 
-```markdown
-Syntax highlighted code block
+ie, by using this algoritgm you can semanticly determine your customers searchs much better. Lets assume a customer is searching "aple" but probably meaning "apple"
+so you need Levenshtein Distance.
 
-# Header 1
-## Header 2
-### Header 3
+The formal definition of the Levenshtein distance between two strings a and b can be seen as follows:
 
-- Bulleted
-- List
+![Levenshtein Distance Formula](https://wikimedia.org/api/rest_v1/media/math/render/svg/6224efffbe9a4e01afbddeeb900bfd1b3350b335)
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+It is important to note that the rows on the minimum above correspond to a deletion, an insertion, and a substitution in that order.
 
-[Link](url) and ![Image](src)
-```
+It is also possible to calculate the Levenshtein similarity ratio based on the Levenshtein distance.
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
+##Also I 've added numpy.zero function usage alternativly. This is for a better code thanks to using nump.zero() matrix.
+You can find at alternative.py
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/denizumutdereli/python-levenshtein-distance/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
