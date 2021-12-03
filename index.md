@@ -1,4 +1,4 @@
-# The Levenshtein Distance
+# The Levenshtein Distance and Python
 
 The Levenshtein distance is a metric to measure how apart are two sequences of words. In other words, it measures the minimum number of edits that you need to do to change a one-word sequence into the other. These edits can be insertions, deletions or substitutions. This metric was named after Vladimir Levenshtein, who originally considered it in 1965.
 
